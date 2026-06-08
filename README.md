@@ -13,7 +13,13 @@ cd docker-bash-hw-3
 
 # Commands
 
-### Generator
+Use the command below if you have permisison error
+
+```bash
+chmod +x run.sh
+```
+
+## Generator
 
 Building generator's image
 
