@@ -1,8 +1,6 @@
-# Docker Bash HW3
-
 # About the project
 
-It's an uni homework for exercising with Docker and Bash
+It's an uni homework for exercising with Docker and Bash. Use GitHub Codespaces for correct work
 
 # Downloading the project
 
@@ -15,7 +13,7 @@ cd docker-bash-hw-3
 
 # Commands
 
-## Generator
+### Generator
 
 Building generator's image
 
@@ -41,7 +39,7 @@ Creating local data for local debugging
 ./run.sh create_local_data
 ```
 
-## Reporter
+### Reporter
 
 Building reporter's image
 
@@ -61,7 +59,7 @@ Running the reporter and checking that container can see the data
 ./run.sh inside_reporter
 ```
 
-## Additional
+### Additional
 
 Getting project's structure
 

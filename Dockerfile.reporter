@@ -8,4 +8,4 @@ RUN npm install
 
 COPY report.js /app/
 
-ENTRYPOINT [ "node", "report.js" ]
+CMD [ "node", "report.js" ]

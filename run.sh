@@ -19,18 +19,17 @@ case "$1" in
         ;;
 
     structure)
-        ls -laR
+        tree
         ;;
     clear_data)
-        rm -f data/*.csv 
-        rm -f data/*.html 
+        docker run --rm -v /${PWD}/data:/data alpine sh -c "rm -f /data/*.csv /data/*.html"
         ;;
     inside_generator)
         docker run -v /${PWD}/data:/app/data generator
-        docker run -v /${PWD}/data:/app/data generator ls -lah /app/data/
+        docker run -v /${PWD}/data:/app/data generator ls -lahR /app/data
         ;;
     inside_reporter)
         docker run -v /${PWD}/data:/data reporter
-        docker run -v /${PWD}/data:/data reporter ls -lah /data/
+        docker run -v /${PWD}/data:/data reporter ls -lahR /data
         ;;
 esac
